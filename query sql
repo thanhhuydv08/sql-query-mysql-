@@ -1,0 +1,11 @@
+  String sql = "UPDATE book SET namebook = '"+book.getNameBook()+"',author = '"+book.getNameAuthor()+"', namecompany = '"+book.getNameCompany()+"', price = '"+book.getPrice() +"' where namebook='"+keyUpdateNameBook+"'";
+	String sql = "DELETE FROM book WHERE namebook='"+nameBookDelete+"'";
+  String sql ="select * from book where namebook LIKE '%"+txtLookForBook.getText()+"%'";
+  String sql ="insert into book (namebook,author,namecompany,price) values ('"+book.getNameBook()+"','"+book.getNameAuthor()+"','"+book.getNameCompany()+"','"+book.getPrice()+"')";
+  
+  tại statement bắt buộc satement.executeUpdate khi sql dạng insert - update - delete  => trả về 1 nếu truy vấn đúng database
+                         statement.executeQuery khi sql dạng select => trả ve 1 list value của bảng trong database kiểu resultset
+                         
+  
+  
+  
